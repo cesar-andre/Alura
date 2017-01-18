@@ -3,6 +3,10 @@ class Empresa {
   private String cnpj;
   private Funcionario[] funcionarios;
 
+  public Empresa(int tamanho) {
+    this.funcionarios = new Funcionario[tamanho];
+  }
+
   void adicionar(Funcionario f) {
     for (int i = 0; i < this.funcionarios.lenght ; i++ ) {
       if (this.funcionarios[i] == null) {
@@ -17,6 +21,9 @@ class Empresa {
       System.out.println("Salário: " this.funcionarios[i].salario);
 
     }
+
+
+
   }
 
   public String getNome() {
@@ -47,6 +54,18 @@ public class Funcionario {
     private double salario;
     private Data dataEntrada;
     private String rg;
+    private int identificador;
+    private static int proximoFuncionario;
+
+    public Funcionario() {}
+    public Funcionario(String nome) {
+      this.nome = nome;
+      this.identificador = ++proximoFuncionario;
+    }
+
+    public int getIdentificador() {
+      return this.identificador;
+    }
 
     public void recebeAumento(double aumento) {
         this.salario += aumento;
@@ -103,6 +122,13 @@ public class Funcionario {
 
 class Data {
   int dia, mes, ano;
+
+  public Data(int dia, int mes, int ano) {
+    if (dia == 331 && mes == 2) {
+      System.out.println("Data inválida");
+    }
+  }
+
 }
 
 class TestaEmpresa {
