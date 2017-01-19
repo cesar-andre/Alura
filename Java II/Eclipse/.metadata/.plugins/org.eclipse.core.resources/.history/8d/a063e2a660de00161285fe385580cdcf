@@ -1,0 +1,13 @@
+public class FuncionarioAutenticavel extends Funcionario {
+
+	@Override
+	public double getBonus() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	public boolean autentica(int senha) {
+		return this.senha == senha;
+	}
+
+}

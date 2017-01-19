@@ -25,4 +25,5 @@ abstract class Funcionario {
 	}
 
 	public abstract double getBonus();
+
 }
