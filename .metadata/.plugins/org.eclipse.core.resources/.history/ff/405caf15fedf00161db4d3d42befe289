@@ -1,0 +1,9 @@
+
+public class Conta {
+	private double saldo;
+
+	public Conta(double saldo) {
+		super();
+		this.saldo = saldo;
+	}
+}

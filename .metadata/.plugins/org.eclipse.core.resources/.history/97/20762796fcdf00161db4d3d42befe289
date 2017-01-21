@@ -1,0 +1,7 @@
+package interfaces;
+
+public class Teste {
+	public static void main(String[] args) {
+		AreaCalculavel a = new Retangulo(3,2);
+	}
+}
