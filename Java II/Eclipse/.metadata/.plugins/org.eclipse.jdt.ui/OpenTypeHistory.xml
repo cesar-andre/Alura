@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=fj11/src&lt;fj11{TestaConta.java[TestaConta" modifiers="1" timestamp="1484766505954"/>
-<typeInfo handle="=fj11/src&lt;fj11{Conta.java[Conta" modifiers="1" timestamp="1484766512129"/>
+<typeInfo handle="=fj11/src&lt;fj11{TestaConta.java[TestaConta" modifiers="1" timestamp="1484831363569"/>
+<typeInfo handle="=fj11/src&lt;fj11{Conta.java[Conta" modifiers="1025" timestamp="1484831092197"/>
+<typeInfo handle="=fj11.2/src&lt;{Funcionario.java[Funcionario" modifiers="1024" timestamp="1484841730318"/>
+<typeInfo handle="=fj11.2/src&lt;{Gerente.java[Gerente" modifiers="0" timestamp="1484841819332"/>
 </typeInfoHistroy>

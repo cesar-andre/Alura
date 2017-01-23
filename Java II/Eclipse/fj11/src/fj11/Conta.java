@@ -40,12 +40,20 @@ abstract public class Conta {
 
 	public abstract void atualiza(double taxa);
 
-	public void deposita(double valor) {
-		this.saldo += valor;
+	public void deposita(double valor) throws ValorInvalidoException {
+		if (valor > 0) {
+			this.saldo += valor;
+		} else {
+			throw new ValorInvalidoException(valor);
+		}
 	}
 
-	public void saca(double valor) {
-		this.saldo -= valor;
+	public void saca(double valor) throws Exception {
+		if (this.saldo >= valor) {
+			this.saldo -= valor;
+		} else {
+			throw new SaldoInsuficienteException(this.saldo);
+		}
 	}
 	
 	public void setSaldo(double saldo) {
