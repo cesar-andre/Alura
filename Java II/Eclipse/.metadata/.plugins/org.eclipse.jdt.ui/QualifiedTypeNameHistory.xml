@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="fj11.SaldoInsuficienteException"/>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="fj11.ContaCorrente"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+<fullyQualifiedTypeName name="fj11.ValorInvalidoException"/>
+<fullyQualifiedTypeName name="br.com.caelum.fj11.banco.conta.ContaCorrente"/>
+<fullyQualifiedTypeName name="br.com.caelum.fj11.banco.conta.Conta"/>
+<fullyQualifiedTypeName name="br.com.caelum.fj11.conta.GuardadorDeObjetos"/>
+<fullyQualifiedTypeName name="br.com.caelum.fj11.banco.conta.Cliente"/>
+</qualifiedTypeNameHistroy>

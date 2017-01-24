@@ -65,5 +65,17 @@ abstract public class Conta {
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Conta com saldo: " + this.saldo;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		Conta outra = (Conta) obj;
+		return outra.saldo == this.saldo;
+	}
 
 }
