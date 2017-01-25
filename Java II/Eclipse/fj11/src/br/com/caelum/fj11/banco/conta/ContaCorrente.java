@@ -6,6 +6,10 @@ public class ContaCorrente extends Conta {
 		super(nome, agencia, saldo);
 	}
 	
+	public ContaCorrente(String nome, int agencia, double saldo, int numero) {
+		super(nome, agencia, saldo, numero);
+	}
+	
 	@Override
 	public void atualiza(double taxa) {
 		this.saldo = this.saldo + (this.saldo * taxa * 2);

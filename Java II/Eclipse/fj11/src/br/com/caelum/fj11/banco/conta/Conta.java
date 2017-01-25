@@ -5,11 +5,27 @@ abstract public class Conta {
 	protected double saldo;
 	private String nome;
 	private int agencia;
+	private int numero;
 
 	public Conta(String nome, int agencia, double saldo) {
 		this.nome = nome;
 		this.agencia = agencia;
 		this.saldo = saldo;
+	}
+	
+	public Conta(String nome, int agencia, double saldo, int numero) {
+		this.nome = nome;
+		this.agencia = agencia;
+		this.saldo = saldo;
+		this.numero = numero;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
 	}
 
 	public String getNome() {
@@ -74,8 +90,9 @@ abstract public class Conta {
 	
 	@Override
 	public boolean equals(Object obj) {
+		if(!(obj instanceof Conta)) return false;
 		Conta outra = (Conta) obj;
-		return outra.saldo == this.saldo;
+		return outra.numero == this.numero && outra.nome.equals(this.nome);
 	}
 
 }
