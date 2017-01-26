@@ -1,0 +1,4 @@
+Salve isso no arquivo saida.txt
+Vamos ver se dá certo
+
+close

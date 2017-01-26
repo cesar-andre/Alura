@@ -1,6 +1,6 @@
 package br.com.caelum.fj11.banco.conta;
 
-abstract public class Conta {
+public class Conta implements Comparable<Conta> {
 
 	protected double saldo;
 	private String nome;
@@ -54,7 +54,9 @@ abstract public class Conta {
 		System.out.println(this.saldo);
 	}
 
-	public abstract void atualiza(double taxa);
+	public void atualiza(double taxa){
+		
+	}
 
 	public void deposita(double valor) throws ValorInvalidoException {
 		if (valor > 0) {
@@ -93,6 +95,13 @@ abstract public class Conta {
 		if(!(obj instanceof Conta)) return false;
 		Conta outra = (Conta) obj;
 		return outra.numero == this.numero && outra.nome.equals(this.nome);
+	}
+
+	@Override
+	public int compareTo(Conta outra) {
+		if (this.saldo > outra.saldo) return 1;
+		if (this.saldo < outra.saldo) return -1;
+		return 0;
 	}
 
 }
