@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=fj11/src&lt;br.com.caelum.fj11.banco.conta{Conta.java[Conta" modifiers="1" timestamp="1485513020531"/>
+<typeInfo handle="=fj11/src&lt;br.com.caelum.fj11.banco.conta{Conta.java[Conta" modifiers="1" timestamp="1485517801447"/>
+<typeInfo handle="=fj11/src&lt;br.com.caelum.fj11.banco.conta{ContaCorrente.java[ContaCorrente" modifiers="1" timestamp="1485367126057"/>
+<typeInfo handle="=fj11/src&lt;br.com.caelum.fj11.banco.conta{ContaPoupanca.java[ContaPoupanca" modifiers="1" timestamp="1485258603553"/>
 </typeInfoHistroy>

@@ -1,6 +1,6 @@
 package br.com.caelum.fj11.banco.conta;
 
-public class Conta implements Comparable<Conta> {
+public class Conta {
 
 	protected double saldo;
 	private String nome;
@@ -114,7 +114,7 @@ public class Conta implements Comparable<Conta> {
 		return true;
 	}
 
-	@Override
+	
 	public int compareTo(Conta outra) {
 		if (this.saldo > outra.saldo) return 1;
 		if (this.saldo < outra.saldo) return -1;

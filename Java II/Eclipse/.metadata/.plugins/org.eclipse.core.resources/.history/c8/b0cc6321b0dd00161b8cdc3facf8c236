@@ -1,7 +1,0 @@
-package fj11;
-
-public class Conta {
-
-	private int saldo;
-	
-}

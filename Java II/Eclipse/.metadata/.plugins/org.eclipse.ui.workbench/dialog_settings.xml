@@ -4,24 +4,19 @@
 		<item value="250" key="dialogHeight"/>
 		<item value="350" key="dialogWidth"/>
 		<list key="textEntries">
-			<item value="2"/>
 			<item value="1"/>
 			<item value="1"/>
 		</list>
 		<list key="orderedElements">
 			<item value="org.eclipse.debug.ui.actions.RunLast"/>
-			<item value="org.eclipse.jdt.ui.edit.text.java.generate.hashcode.equals"/>
 			<item value="org.eclipse.ui.console.ConsoleView"/>
 		</list>
 		<list key="orderedProviders">
 			<item value="org.eclipse.ui.actions"/>
-			<item value="org.eclipse.ui.commands"/>
 			<item value="org.eclipse.e4.ui.parts"/>
 		</list>
 		<list key="textArray">
 			<item value="run"/>
-			<item value="r"/>
-			<item value="generate has"/>
 			<item value="console"/>
 		</list>
 	</section>
@@ -29,9 +24,7 @@
 		<item value="org.eclipse.jdt.ui.wizards.NewClassCreationWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.jdt.ui.java"/>
-			<item value="org.eclipse.jst.j2ee.internal"/>
 			<item value="org.eclipse.jpt.jaxb"/>
-			<item value="org.eclipse.jst.ws.ui.new"/>
 		</list>
 	</section>
 </section>
