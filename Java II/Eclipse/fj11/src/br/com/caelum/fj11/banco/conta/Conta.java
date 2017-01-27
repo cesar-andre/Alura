@@ -91,10 +91,27 @@ public class Conta implements Comparable<Conta> {
 	}
 	
 	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		long temp;
+		temp = Double.doubleToLongBits(saldo);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object obj) {
-		if(!(obj instanceof Conta)) return false;
-		Conta outra = (Conta) obj;
-		return outra.numero == this.numero && outra.nome.equals(this.nome);
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (!(obj instanceof Conta))
+			return false;
+		Conta other = (Conta) obj;
+		if (Double.doubleToLongBits(saldo) != Double.doubleToLongBits(other.saldo))
+			return false;
+		return true;
 	}
 
 	@Override
@@ -103,5 +120,7 @@ public class Conta implements Comparable<Conta> {
 		if (this.saldo < outra.saldo) return -1;
 		return 0;
 	}
+	
+	
 
 }

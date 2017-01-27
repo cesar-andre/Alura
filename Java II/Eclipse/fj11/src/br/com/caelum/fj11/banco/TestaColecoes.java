@@ -1,42 +1,23 @@
 package br.com.caelum.fj11.banco;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
-import br.com.caelum.fj11.banco.conta.ContaCorrente;
+import br.com.caelum.fj11.banco.conta.Conta;
 
 public class TestaColecoes {
 
 	public static void main(String[] args) {
-		ArrayList<String> nomes = new ArrayList<String>();
-		nomes.add("Cesar");
-		nomes.add("André");
+					
+		Map<String, Conta> contas = new HashMap<String, Conta>();
+		Conta c1 = new Conta("Cesar", 123, 200.0);
+		Conta c2 = new Conta("André", 123, 500.0);
+		contas.put("diretor", c1);
+		contas.put("gerente", c2);
 		
-		for (String nome : nomes) {
-			System.out.println(nome);
-		}
+		System.out.println(contas.get("diretor").getSaldo());
+		System.out.println(contas.size());
 		
-		Collections.sort(nomes);
-		
-		for (String nome : nomes) {
-			System.out.println(nome);
-		}
-		
-		ArrayList<ContaCorrente> contas = new ArrayList<ContaCorrente>();
-		ContaCorrente c1 = new ContaCorrente("Cesar", 123, 1500.00);
-		ContaCorrente c2 = new ContaCorrente("Cesar", 123, 900.00);
-		contas.add(c1);
-		contas.add(c2);
-		
-		for (ContaCorrente c : contas) {
-			System.out.println(c);
-		}
-		
-		Collections.sort(contas);
-		
-		for (ContaCorrente c : contas) {
-			System.out.println(c);
-		}
 		
 
 	}

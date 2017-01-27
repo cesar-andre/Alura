@@ -6,8 +6,11 @@
 <fullyQualifiedTypeName name="fj11.ContaCorrente"/>
 <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
 <fullyQualifiedTypeName name="fj11.ValorInvalidoException"/>
-<fullyQualifiedTypeName name="br.com.caelum.fj11.banco.conta.ContaCorrente"/>
-<fullyQualifiedTypeName name="br.com.caelum.fj11.banco.conta.Conta"/>
 <fullyQualifiedTypeName name="br.com.caelum.fj11.conta.GuardadorDeObjetos"/>
 <fullyQualifiedTypeName name="br.com.caelum.fj11.banco.conta.Cliente"/>
+<fullyQualifiedTypeName name="br.com.caelum.fj11.banco.conta.ContaCorrente"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="br.com.caelum.fj11.banco.conta.Conta"/>
 </qualifiedTypeNameHistroy>
