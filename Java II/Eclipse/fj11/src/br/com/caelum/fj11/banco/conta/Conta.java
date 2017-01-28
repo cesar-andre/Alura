@@ -12,7 +12,7 @@ public class Conta {
 		this.agencia = agencia;
 		this.saldo = saldo;
 	}
-	
+
 	public Conta(String nome, int agencia, double saldo, int numero) {
 		this.nome = nome;
 		this.agencia = agencia;
@@ -54,23 +54,25 @@ public class Conta {
 		System.out.println(this.saldo);
 	}
 
-	public void atualiza(double taxa){
-		
+	public void atualiza(double taxa) {
+
 	}
 
-	public void deposita(double valor) throws ValorInvalidoException {
-		if (valor > 0) {
-			this.saldo += valor;
-		} else {
-			throw new ValorInvalidoException(valor);
-		}
+	public synchronized void deposita(double valor) throws ValorInvalidoException {
+			if (valor > 0) {
+				this.saldo += valor;
+			} else {
+				throw new ValorInvalidoException(valor);
+			}
 	}
 
 	/**
 	 * realiza um saque na conta dado o valor passado
 	 * 
-	 * @param valor valor a ser sacado
-	 * @throws Exception caso o saldo seja insuficiente 
+	 * @param valor
+	 *            valor a ser sacado
+	 * @throws Exception
+	 *             caso o saldo seja insuficiente
 	 */
 	public void saca(double valor) throws Exception {
 		if (this.saldo >= valor) {
@@ -79,17 +81,17 @@ public class Conta {
 			throw new SaldoInsuficienteException(this.saldo);
 		}
 	}
-	
+
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
-	
+
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
 		return "Conta com saldo: " + this.saldo;
 	}
-	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -114,13 +116,12 @@ public class Conta {
 		return true;
 	}
 
-	
 	public int compareTo(Conta outra) {
-		if (this.saldo > outra.saldo) return 1;
-		if (this.saldo < outra.saldo) return -1;
+		if (this.saldo > outra.saldo)
+			return 1;
+		if (this.saldo < outra.saldo)
+			return -1;
 		return 0;
 	}
-	
-	
 
 }
