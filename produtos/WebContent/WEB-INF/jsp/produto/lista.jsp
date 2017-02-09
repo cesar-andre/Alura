@@ -20,6 +20,7 @@
 	</script>
 
 	<h1>Produtos</h1>
+	<h2><fmt:message key="mensagem.bemvindo" /></h2>
 	<div id="mensagem"></div>
 	<table width="100%">
 		<tr>
@@ -35,10 +36,16 @@
 		<c:forEach items="${produtoList}" var="p" varStatus="st">
 			<tr id="produto${p.id}">
 				<td>${st.count}</td>
-				<td>${p.nome}</td>
-				<td>${p.preco}</td>
+				<td>${p.nome.toUpperCase()}</td>
+				<td>
+					<fmt:formatNumber value="${p.preco}" type="currency" />
+					
+				</td>
 				<td>${p.descricao}</td>
-				<td>${p.dataInicioVenda.time}</td>
+				<td>
+					<fmt:formatDate value="${p.dataInicioVenda.time}" pattern="EEEE, dd 'de' MMMM 'de' yyyy"/>
+					
+				</td>
 				<c:choose>
 					<c:when test="${p.usado }">
 						<td>Sim</td>
@@ -55,9 +62,9 @@
 		</c:forEach>
 	</table>
 	<c:url value="/produto/formulario" var="urlAdicionar"></c:url>
-	<a href="<c:url value="/produto/formulario"></c:url>">Adicionar um produto</a>
+	<a href="<c:url value="/produto/formulario"></c:url>"><fmt:message key="mensagem.novoProduto" /></a>
 	
-	<c:set var="nome" value="João da Silva" />
-	<c:out value="${nome}" />
+	<c:import url="../_comum/rodape.jsp" />
+
 </body>
 </html>
