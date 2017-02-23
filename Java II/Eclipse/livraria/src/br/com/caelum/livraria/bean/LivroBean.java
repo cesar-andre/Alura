@@ -63,7 +63,7 @@ public class LivroBean {
 		return new DAO<Autor>(Autor.class).listaTodos();
 	}
 
-	public void comecaComdigitoUm(FaceletContext fc, UIComponent component, Object value) throws ValidatorException {
+	public void comecaComDigitoUm(FaceletContext fc, UIComponent component, Object value) throws ValidatorException {
 		String valor = value.toString();
 		if (!valor.startsWith("1")) {
 			throw new ValidatorException(new FacesMessage("Deve começar com 1"));
